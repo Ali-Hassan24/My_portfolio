@@ -11,7 +11,12 @@
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/vue-fontawesome": "^3.0.8",
+    "@mdi/font": "^7.4.47",
+    "@quasar/extras": "^1.16.15",
+    "aos": "^2.3.4",
     "core-js": "^3.8.3",
+    "primevue": "^4.2.5",
+    "quasar": "^2.17.5",
     "vue": "^3.2.13"
   },
   "devDependencies": {
@@ -24,7 +29,9 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "vite-plugin-vuetify": "^2.0.4",
+    "vuetify": "^3.7.6"
   },
   "eslintConfig": {
     "root": true,

@@ -71,7 +71,7 @@ export default {
       showMenu: false,
       links: [
         { name: "Home", url: "/" },
-        { name: "About", url: "/about" },
+        { name: "About", url: "/#about" },
         { name: "Projects", url: "/projects" },
         { name: "Skills", url: "/skills" },
         { name: "Contact", url: "/contact" },
