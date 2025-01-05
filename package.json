@@ -17,7 +17,8 @@
     "core-js": "^3.8.3",
     "primevue": "^4.2.5",
     "quasar": "^2.17.5",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue3-carousel": "^0.12.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

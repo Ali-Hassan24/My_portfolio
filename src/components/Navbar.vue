@@ -1,5 +1,4 @@
 <template>
-  <!-- Navbar -->
   <nav
     :class="[ 
       'sticky top-0 z-50 transition-all duration-300', 
@@ -7,7 +6,6 @@
     ]"
   >
     <div class="flex items-end justify-between px-4 lg:px-10 py-3">
-      <!-- Logo -->
       <div class="flex items-center space-x-4">
         <img
           src="../assets/mypic2.png"
@@ -17,7 +15,6 @@
         <h1 class="text-lg font-bold text-orange-500">Ali Hassan</h1>
       </div>
 
-      <!-- Mobile Menu Icon -->
       <div @click="toggleMenu" class="lg:hidden cursor-pointer">
         <svg
           v-if="!showMenu"
@@ -41,7 +38,6 @@
         </svg>
       </div>
 
-      <!-- Navigation Links -->
       <ul
         :class="[showMenu ? 'block' : 'hidden', 'lg:flex lg:space-x-8 items-center space-y-2 lg:space-y-0']"
         class="absolute lg:relative bg-white lg:bg-transparent w-full lg:w-auto top-16 left-0 lg:top-auto lg:left-auto"
@@ -52,8 +48,8 @@
           class="border-b lg:border-none"
         >
           <a
-            :href="link.url"
-            :class="[isActive(link.url) ? 'text-orange-500 font-bold underline underline-offset-8' : 'text-gray-400', 'block lg:inline px-4 py-3 lg:p-0']"
+            @click.prevent="scrollTo(link.target)"
+            :class="[activeSection === link.target ? 'text-orange-500 font-bold underline underline-offset-8 cursor-pointer' : 'text-gray-400  cursor-pointer', 'block lg:inline px-4 py-3 lg:p-0']"
           >
             {{ link.name }}
           </a>
@@ -62,7 +58,6 @@
     </div>
   </nav>
 </template>
-
 <script>
 export default {
   name: "PortfolioNavbar",
@@ -70,12 +65,13 @@ export default {
     return {
       showMenu: false,
       links: [
-        { name: "Home", url: "/" },
-        { name: "About", url: "/#about" },
-        { name: "Projects", url: "/projects" },
-        { name: "Skills", url: "/skills" },
-        { name: "Contact", url: "/contact" },
+        { name: "Home", target: "home" },
+        { name: "About", target: "about" },
+        { name: "Skills", target: "skills" },
+        { name: "Projects", target: "projects" },
+        { name: "Contact", target: "contact" },
       ],
+      activeSection: "home",
       isScrolled: false,
     };
   },
@@ -83,11 +79,26 @@ export default {
     toggleMenu() {
       this.showMenu = !this.showMenu;
     },
-    isActive(url) {
-      return window.location.pathname === url;
+    scrollTo(targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     },
     handleScroll() {
       this.isScrolled = window.scrollY > 50;
+      this.updateActiveSection();
+    },
+    updateActiveSection() {
+      this.links.forEach((link) => {
+        const section = document.getElementById(link.target);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom > 100) {
+            this.activeSection = link.target;
+          }
+        }
+      });
     },
   },
   mounted() {
@@ -98,10 +109,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-/* Navbar Styling */
-nav ul {
-  transition: all 0.3s ease-in-out;
-}
-</style>
