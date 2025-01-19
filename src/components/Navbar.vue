@@ -69,6 +69,7 @@ export default {
         { name: "About", target: "about" },
         { name: "Skills", target: "skills" },
         { name: "Projects", target: "projects" },
+        { name: "Testimonials", target: "testimonials" },
         { name: "Contact", target: "contact" },
       ],
       activeSection: "home",
