@@ -85,6 +85,9 @@
 
     <!-- reviews section -->
      <ReviewSection/>
+
+     <!-- contact Us -->
+    <ContactUs/>
   </div>
 
   <footers />
@@ -95,8 +98,9 @@ import Navbar from "@/components/Navbar.vue";
 import footers from "@/components/footer.vue";
 import aboutUs from "./about.vue";
 import SkillsSection from "./skill.vue";
-import ProjectsSection from './Projects.vue'
-import ReviewSection from './Reviews.vue'
+import ProjectsSection from './Projects.vue';
+import ReviewSection from './Reviews.vue';
+import ContactUs from './Contact.vue';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -110,6 +114,7 @@ export default {
     SkillsSection,
     ProjectsSection,
     ReviewSection,
+    ContactUs,
   },
   mounted() {
     // Initialize AOS

@@ -57,7 +57,7 @@
           class="my-10"
         >
           <Slide v-for="(item, index) in experiences" :key="index">
-            <div class="bg-gray-800 opacity-6 rounded-lg p-6 shadow-lg">
+            <div class="bg-gray-800 opacity-6 h-52 w-11/12 rounded-lg p-6 shadow-lg">
               <h3 class="text-xl font-semibold text-orange-500 mb-2">{{ item.title }}</h3>
               <p class="text-gray-300 text-sm">{{ item.location }}</p>
               <p class="text-gray-400 mt-4 text-justify">{{ item.description }}</p>
@@ -172,7 +172,9 @@ export default {
                         title: "Internship in Techxudo",
                         location: "Karachi - Pakistan",
                         description: "One month working in Techxudo as a Frontend Designer.",
-                        points: ["Designed a website (SocialHub) using HTML, CSS, and Bootstrap."],
+                        points: ["Designed a website (SocialHub) using HTML, CSS, and Bootstrap.",
+                          "Built a KMJ logiceslt website for Client"
+                        ],
                     },
                     {
                         title: "Job in CQ Hostos",
@@ -180,6 +182,7 @@ export default {
                         description: "2+ years of experience in data entry work.",
                         points: ["Handled and optimized client data operations."],
                     },
+                   
                 ],
             carouselBreakpoints: {
                 768: { itemsToShow: 1 }, // Mobile screens

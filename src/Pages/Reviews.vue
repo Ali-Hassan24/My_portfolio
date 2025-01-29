@@ -107,7 +107,7 @@
       return {
         testimonials: [
           {
-            name: "Hayfa Hamdan",
+            name: "Hayfa Hamdan (UK)",
             role: "CEO, Swished App",
             image: hayfaImage,
             message:
