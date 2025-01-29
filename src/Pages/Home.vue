@@ -124,8 +124,8 @@ export default {
     const cursor = document.querySelector(".cursor");
     const professions = [
       "Web Developer",
-      "Designer",
       "Laravel Developer",
+      "Web & Graphic Designer",
       "Vue.js Developer",
     ];
     let index = 0;
