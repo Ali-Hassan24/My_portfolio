@@ -105,7 +105,7 @@ export default {
                 {
                     name: "Laravel",
                     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png",
-                    proficiency: 60,
+                    proficiency: 75,
                 },
                 {
                     name: "PHP",

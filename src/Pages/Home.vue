@@ -57,7 +57,7 @@
             class="flex flex-col sm:flex-row justify-center md:justify-start space-y-2 sm:space-y-0 sm:space-x-4 mt-4"
           >
             <a
-              href="path-to-cv.pdf"
+              href="https://drive.google.com/file/d/1PVwsBuAD6AEsvwxXh9o6ExSgkZK6lVBr/view?usp=drive_link" target="_blank"
               class="bg-orange-500 text-white py-2 px-6 rounded shadow-md hover:bg-orange-600 transition"
               download
             >
