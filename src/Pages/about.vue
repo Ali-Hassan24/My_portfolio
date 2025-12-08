@@ -1,167 +1,242 @@
 <template>
-    <!-- About Section -->
-    <section
-      id="about"
-      class="py-16 text-white"
-      style="background: linear-gradient(to bottom right, #1a1a1a, #2d2d2d, #f97316);"
-    >
-      <h1
-        class="text-6xl text-center underline underline-offset-8 py-5 uppercase"
-        data-aos="fade-up"
-      >
-        About Us
-      </h1>
+  <!-- About Section -->
+  <section
+    id="about"
+    class="relative py-24 text-white overflow-hidden"
+  >
+    <!-- Background with gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
+    
+    <!-- Decorative Elements -->
+    <div class="absolute top-0 left-0 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+    <div class="absolute top-1/2 left-1/2 w-[600px] h-[600px] bg-orange-500/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+
+    <div class="relative z-10">
+      <!-- Section Header -->
+      <div class="text-center mb-16" data-aos="fade-up">
+        <span class="inline-block px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-sm font-medium tracking-wider uppercase mb-4">
+          Get to Know Me
+        </span>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold">
+          About <span class="bg-gradient-to-r from-orange-400 via-red-500 to-orange-500 bg-clip-text text-transparent">Me</span>
+        </h1>
+        <div class="w-24 h-1 bg-gradient-to-r from-orange-500 to-red-500 mx-auto mt-6 rounded-full"></div>
+      </div>
+
       <div
-        class="container mx-auto grid md:grid-cols-2 items-center gap-8 px-4 md:px-20"
+        class="container mx-auto grid lg:grid-cols-2 items-center gap-12 lg:gap-20 px-6 md:px-12 lg:px-20"
         data-aos="fade-up"
         data-aos-delay="100"
       >
-        <!-- About Content -->
-        <div class="space-y-6">
-          <h2
-            class="text-4xl md:text-5xl font-bold"
-            data-aos="fade-right"
-            data-aos-delay="200"
-          >
-            Professional <span class="text-orange-500">Problem Solutions</span><br />
-            For Digital Products
-          </h2>
-          <p
-            class="text-gray-300"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            Hello! I am Ali Hassan, a passionate Web Developer, Graphic Designer, and Data Entry Specialist. 
-            I provide high-quality, result-oriented services to help businesses thrive in the digital landscape. 
-            I am committed to delivering creative and efficient solutions tailored to meet client needs.
-          </p>
-          <!-- Services List -->
-          <div class="grid grid-cols-2 gap-4">
-            <div class="flex items-center space-x-3" data-aos="zoom-in" data-aos-delay="400">
-              <i class="fas fa-code text-orange-500"></i>
-              <span>Web Development</span>
-            </div>
-            <div class="flex items-center space-x-3" data-aos="zoom-in" data-aos-delay="500">
-              <i class="fas fa-paint-brush text-orange-500"></i>
-              <span>Graphic Design</span>
-            </div>
-            <div class="flex items-center space-x-3" data-aos="zoom-in" data-aos-delay="600">
-              <i class="fas fa-keyboard text-orange-500"></i>
-              <span>Data Entry</span>
-            </div>
-            <div class="flex items-center space-x-3" data-aos="zoom-in" data-aos-delay="700">
-              <i class="fas fa-lightbulb text-orange-500"></i>
-              <span>Creative Solutions</span>
+        <!-- Profile Image Section -->
+        <div class="relative order-2 lg:order-2" data-aos="fade-right" data-aos-delay="200">
+          <!-- Glow Effect Behind Image -->
+          <div class="absolute inset-4 bg-gradient-to-br from-orange-500/30 to-red-500/30 rounded-2xl blur-2xl"></div>
+          
+          <!-- Main Image Container -->
+          <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-orange-500 via-red-500 to-orange-400 rounded-2xl blur opacity-40 group-hover:opacity-60 transition-opacity duration-500"></div>
+            <div class="relative bg-gray-800 rounded-2xl p-2">
+              <img
+                src="../assets/my_pic2.png"
+                alt="Ali Hassan"
+                class="rounded-xl w-full h-[480px] object-cover shadow-2xl transform group-hover:scale-[1.02] transition-transform duration-500"
+              />
             </div>
           </div>
-          <!-- Contact Information -->
-          <div class="md:flex items-center space-x-6 mt-6" data-aos="fade-up" data-aos-delay="800">
-            <div class="bg-gray-800 px-4 py-3 rounded-lg flex items-center space-x-3">
-              <i class="fas fa-envelope text-orange-500 text-3xl"></i>
-              <p>
-                <span class="text-gray-300">Email us</span><br />
-                <span class="font-bold">alihassanjsdev@gmail.com</span>
-              </p>
-            </div>
-            <div class="bg-gray-800 space-x-3 mt-3 md:mt-0 px-6 py-3 rounded-lg flex items-center">
-              <i class="fas fa-phone-volume text-orange-500 text-3xl"></i>
-              <p>
-                <span class="text-gray-300">Make a Call</span><br />
-                <span class="font-bold">+92 3034340620</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Profile Image -->
-        <div class="relative" data-aos="fade-up" data-aos-delay="400">
-          <img
-            src="../assets/mypic2.png"
-            alt="Ali Hassan"
-            class="rounded-lg shadow-lg w-full h-[520px]"
-          />
+
+          <!-- Floating Badge -->
           <div
-            class="absolute bottom-10 left-4 bg-white p-1 rounded-full shadow-lg flex items-center space-x-3"
+            class="absolute -bottom-6 -right-4 md:right-8 bg-white/10 backdrop-blur-xl p-4 rounded-2xl shadow-2xl border border-white/20 flex items-center gap-4 group hover:bg-white/20 transition-all duration-300"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center shadow-lg">
+              <i class="fas fa-laptop-code text-white text-xl"></i>
+            </div>
+            <div>
+              <p class="text-white font-bold text-lg">3+ Years</p>
+              <p class="text-gray-400 text-sm">Experience</p>
+            </div>
+          </div>
+
+          <!-- Stats Badge -->
+          <div
+            class="absolute -top-4 -left-4 md:left-8 bg-white/10 backdrop-blur-xl px-5 py-3 rounded-xl shadow-2xl border border-white/20"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
-            <img
-              src="https://images.vexels.com/media/users/3/129668/isolated/svg/07de0f2c1c707276c0e4105798e16930.svg"
-              alt="Avatar"
-              class="w-12 h-12 rounded-full"
-            />
-            <div>
-              <p class="text-lg text-gray-800 px-3">Web Developer <i class="fa-solid fa-arrow-trend-up"></i></p>
+            <p class="text-2xl font-bold text-white">50+</p>
+            <p class="text-gray-400 text-xs uppercase tracking-wider">Projects Done</p>
+          </div>
+        </div>
+
+        <!-- About Content -->
+        <div class="space-y-8 order-1 lg:order-1">
+          <h2
+            class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            Professional 
+            <span class="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Problem Solver</span>
+            <br/>For Digital Products
+          </h2>
+          
+          <p
+            class="text-gray-400 text-lg leading-relaxed"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            Hello! I am <span class="text-white font-semibold">Ali Hassan</span>, a passionate Web Developer, Graphic Designer, and Data Entry Specialist. 
+            I provide high-quality, result-oriented services to help businesses thrive in the digital landscape. 
+            I am committed to delivering creative and efficient solutions tailored to meet client needs.
+          </p>
+
+          <!-- Services Grid -->
+          <div class="grid grid-cols-2 gap-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
+              <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500/20 to-red-500/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-code text-orange-400 text-xl"></i>
+              </div>
+              <span class="text-white font-medium">Web Development</span>
             </div>
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
+              <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500/20 to-red-500/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-paint-brush text-orange-400 text-xl"></i>
+              </div>
+              <span class="text-white font-medium">Graphic Design</span>
+            </div>
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
+              <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500/20 to-red-500/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-keyboard text-orange-400 text-xl"></i>
+              </div>
+              <span class="text-white font-medium">Data Entry</span>
+            </div>
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
+              <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500/20 to-red-500/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-lightbulb text-orange-400 text-xl"></i>
+              </div>
+              <span class="text-white font-medium">Creative Solutions</span>
+            </div>
+          </div>
+
+          <!-- Contact Cards -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-4" data-aos="fade-up" data-aos-delay="500">
+            <a href="mailto:alihassanjsdev@gmail.com" class="group flex-1 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 flex items-center gap-4 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-envelope text-white text-lg"></i>
+              </div>
+              <div>
+                <p class="text-gray-400 text-sm">Email me</p>
+                <p class="text-white font-semibold text-sm">alihassanjsdev@gmail.com</p>
+              </div>
+            </a>
+            <a href="tel:+923034340620" class="group flex-1 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 flex items-center gap-4 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform duration-300">
+                <i class="fas fa-phone-alt text-white text-lg"></i>
+              </div>
+              <div>
+                <p class="text-gray-400 text-sm">Call me</p>
+                <p class="text-white font-semibold">+92 303 4340620</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
+
       <!-- Education Section -->
-      <section
-        id="education"
-        class="mt-16 px-4 md:px-20"
-       
-      >
-        <h2 class="text-4xl text-center text-white underline underline-offset-8 py-5 uppercase" data-aos="fade-up"
-                data-aos-delay="500">
-          Education
-        </h2>
-        <div class="relative  md:grid md:grid-cols-2 mx-8 md:mx-20">
-          <div class="border-l-4 border-orange-500">
-              <!-- Timeline Item -->
-              <div class="mb-8 flex items-center">
-                <div class="w-4 h-4 bg-white rounded-full absolute "></div>
-                <div class="ml-6 text-white space-y-2" data-aos="fade-up"
-                data-aos-delay="500">
-                  <h3 class="text-2xl font-bold">Matric (2016-2018)</h3>
-                  <p>Study: Science Biology</p>
-                  <p>From: Central Model School, Lahore</p>
+      <section id="education" class="mt-32 px-6 md:px-12 lg:px-20">
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span class="inline-block px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-sm font-medium tracking-wider uppercase mb-4">
+            My Journey
+          </span>
+          <h2 class="text-4xl sm:text-5xl font-extrabold">
+            Education & <span class="bg-gradient-to-r from-orange-400 via-red-500 to-orange-500 bg-clip-text text-transparent">Training</span>
+          </h2>
+          <div class="w-24 h-1 bg-gradient-to-r from-orange-500 to-red-500 mx-auto mt-6 rounded-full"></div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="max-w-4xl mx-auto">
+          <div class="relative">
+            <!-- Vertical Line -->
+            <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-500 via-red-500 to-orange-400 md:-translate-x-1/2"></div>
+
+            <!-- Timeline Items -->
+            <div class="space-y-12">
+              <!-- Item 1 -->
+              <div class="relative flex items-start md:items-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="absolute left-4 md:left-1/2 w-4 h-4 bg-orange-500 rounded-full border-4 border-gray-900 md:-translate-x-1/2 shadow-lg shadow-orange-500/50"></div>
+                <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
+                  <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
+                    <span class="inline-block px-3 py-1 rounded-full bg-orange-500/20 text-orange-400 text-xs font-medium mb-3">2016 - 2018</span>
+                    <h3 class="text-xl font-bold text-white mb-2">Matriculation</h3>
+                    <p class="text-gray-400 text-sm mb-1">📚 Science Biology</p>
+                    <p class="text-gray-500 text-sm">Central Model School, Lahore</p>
+                  </div>
                 </div>
               </div>
-              <!-- Repeat as needed -->
-              <div class="mb-8 flex items-center">
-                <div class="w-4 h-4 bg-white rounded-full absolute "></div>
-                <div class="ml-6 text-white space-y-2" data-aos="fade-up"
-                data-aos-delay="500">
-                  <h3 class="text-2xl font-bold">Inter ICS (2018-2020)</h3>
-                  <p>Study: ICS</p>
-                  <p>Form: Degree College, Kasur</p>
+
+              <!-- Item 2 -->
+              <div class="relative flex items-start md:items-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="absolute left-4 md:left-1/2 w-4 h-4 bg-red-500 rounded-full border-4 border-gray-900 md:-translate-x-1/2 shadow-lg shadow-red-500/50"></div>
+                <div class="ml-12 md:ml-auto md:w-1/2 md:pl-12">
+                  <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
+                    <span class="inline-block px-3 py-1 rounded-full bg-red-500/20 text-red-400 text-xs font-medium mb-3">2018 - 2020</span>
+                    <h3 class="text-xl font-bold text-white mb-2">Intermediate (ICS)</h3>
+                    <p class="text-gray-400 text-sm mb-1">💻 Computer Science</p>
+                    <p class="text-gray-500 text-sm">Degree College, Kasur</p>
+                  </div>
                 </div>
               </div>
-          </div>
-          <div class="border-l-4 border-orange-500">
-              <!-- Repeat as needed -->
-              <div class="mb-8 flex items-center">
-                <div class="w-4 h-4 bg-white rounded-full  -left-2"></div>
-                <div class="ml-6 text-white space-y-2" data-aos="fade-down"
-                data-aos-delay="500">
-                  <h3 class="text-2xl font-bold">BS Computer Science (2020*)</h3>
-                  <p>Study: Computer Science</p>
-                  <p>Form: Virtual Univestiy of Pakistan</p>
+
+              <!-- Item 3 -->
+              <div class="relative flex items-start md:items-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="absolute left-4 md:left-1/2 w-4 h-4 bg-orange-500 rounded-full border-4 border-gray-900 md:-translate-x-1/2 shadow-lg shadow-orange-500/50"></div>
+                <div class="ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
+                  <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
+                    <span class="inline-block px-3 py-1 rounded-full bg-orange-500/20 text-orange-400 text-xs font-medium mb-3">2020 - Present</span>
+                    <h3 class="text-xl font-bold text-white mb-2">BS Computer Science</h3>
+                    <p class="text-gray-400 text-sm mb-1">🎓 Computer Science</p>
+                    <p class="text-gray-500 text-sm">Virtual University of Pakistan</p>
+                  </div>
                 </div>
               </div>
-              <!-- Repeat as needed -->
-              <div class="mb-8 flex items-center">
-                <div class="w-4 h-4 bg-white rounded-full  -left-4"></div>
-                <div class="ml-6 text-white space-y-2" data-aos="fade-down"
-                data-aos-delay="500">
-                  <h3 class="text-2xl font-bold">Web Developent Course</h3>
-                  <p>Study: Html | Css | JavaScript | BootStrap</p>
-                  <p>Form: NTS Teach Software House</p>
+
+              <!-- Item 4 -->
+              <div class="relative flex items-start md:items-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="absolute left-4 md:left-1/2 w-4 h-4 bg-red-500 rounded-full border-4 border-gray-900 md:-translate-x-1/2 shadow-lg shadow-red-500/50"></div>
+                <div class="ml-12 md:ml-auto md:w-1/2 md:pl-12">
+                  <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
+                    <span class="inline-block px-3 py-1 rounded-full bg-red-500/20 text-red-400 text-xs font-medium mb-3">Professional Course</span>
+                    <h3 class="text-xl font-bold text-white mb-2">Web Development Course</h3>
+                    <p class="text-gray-400 text-sm mb-1">🚀 HTML | CSS | JavaScript | Bootstrap</p>
+                    <p class="text-gray-500 text-sm">NTS Teach Software House</p>
+                  </div>
                 </div>
-               </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-    </section>
-  </template>
-  
-  <script>
-  export default {
-    name: "AboutPage",
-  };
-  </script>
-  
-  <style>
-   
-  </style>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: "AboutPage",
+};
+</script>
+
+<style scoped>
+/* Add subtle animation for floating badges */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+</style>
   
