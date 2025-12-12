@@ -2,7 +2,7 @@
   <!-- Navbar (fixed) -->
   <Navbar />
 
-  <div class="relative overflow-hidden mt-[-70px] ">
+  <div class="relative overflow-hidden mt-[-5px] ">
     <!-- Hero Section -->
     <div id="home" class="relative h-screen overflow-hidden">
       <!-- Video Background -->
