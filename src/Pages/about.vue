@@ -39,9 +39,9 @@
             <div class="absolute -inset-1 bg-gradient-to-r from-orange-500 via-red-500 to-orange-400 rounded-2xl blur opacity-40 group-hover:opacity-60 transition-opacity duration-500"></div>
             <div class="relative bg-gray-800 rounded-2xl p-2">
               <img
-                src="../assets/my_pic2.png"
+                src="../assets/pic.png"
                 alt="Ali Hassan"
-                class="rounded-xl w-full h-[480px] object-cover shadow-2xl transform group-hover:scale-[1.02] transition-transform duration-500"
+                class="rounded-xl w-full h-[650px] object-cover shadow-2xl transform group-hover:scale-[1.02] transition-transform duration-500"
               />
             </div>
           </div>
@@ -79,19 +79,29 @@
             data-aos="fade-left"
             data-aos-delay="200"
           >
-            Professional 
-            <span class="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Problem Solver</span>
-            <br/>For Digital Products
+            Professional
+            <span class="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
+              Problem Solver
+            </span>
+            <br />
+            Building Scalable Digital Products
           </h2>
-          
+
           <p
             class="text-gray-400 text-lg leading-relaxed"
             data-aos="fade-left"
             data-aos-delay="300"
           >
-            Hello! I am <span class="text-white font-semibold">Ali Hassan</span>, a passionate Web Developer, Graphic Designer, and Data Entry Specialist. 
-            I provide high-quality, result-oriented services to help businesses thrive in the digital landscape. 
-            I am committed to delivering creative and efficient solutions tailored to meet client needs.
+            Hello! I’m
+            <span class="text-white font-semibold">Ali Hassan</span>,
+            a <span class="text-white font-medium">Full Stack Web Application Developer & Designer</span>
+            with a strong focus on solving real-world problems through clean architecture,
+            thoughtful design, and efficient code.
+            <br /><br />
+            I specialize in building modern, scalable, and high-performance web applications —
+            from intuitive user interfaces to robust backend systems.
+            My approach is simple: understand the problem deeply, design intelligently,
+            and deliver solutions that create real business value.
           </p>
 
           <!-- Services Grid -->
@@ -100,45 +110,55 @@
               <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500/20 to-red-500/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                 <i class="fas fa-code text-orange-400 text-xl"></i>
               </div>
-              <span class="text-white font-medium">Web Development</span>
+              <span class="text-white font-medium">Full Stack Development</span>
             </div>
+
             <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
               <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500/20 to-red-500/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                 <i class="fas fa-paint-brush text-orange-400 text-xl"></i>
               </div>
-              <span class="text-white font-medium">Graphic Design</span>
+              <span class="text-white font-medium">UI / UX & Visual Design</span>
             </div>
+
             <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
               <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500/20 to-red-500/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
-                <i class="fas fa-keyboard text-orange-400 text-xl"></i>
+                <i class="fas fa-database text-orange-400 text-xl"></i>
               </div>
-              <span class="text-white font-medium">Data Entry</span>
+              <span class="text-white font-medium">Backend & Data Handling</span>
             </div>
+
             <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
               <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500/20 to-red-500/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                 <i class="fas fa-lightbulb text-orange-400 text-xl"></i>
               </div>
-              <span class="text-white font-medium">Creative Solutions</span>
+              <span class="text-white font-medium">Problem Solving & Optimization</span>
             </div>
           </div>
 
           <!-- Contact Cards -->
           <div class="flex flex-col sm:flex-row gap-4 pt-4" data-aos="fade-up" data-aos-delay="500">
-            <a href="mailto:alihassanjsdev@gmail.com" class="group flex-1 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 flex items-center gap-4 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
+            <a
+              href="mailto:alihassanjsdev@gmail.com"
+              class="group flex-1 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 flex items-center gap-4 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300"
+            >
               <div class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform duration-300">
                 <i class="fas fa-envelope text-white text-lg"></i>
               </div>
               <div>
-                <p class="text-gray-400 text-sm">Email me</p>
+                <p class="text-gray-400 text-sm">Email</p>
                 <p class="text-white font-semibold text-sm">alihassanjsdev@gmail.com</p>
               </div>
             </a>
-            <a href="tel:+923034340620" class="group flex-1 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 flex items-center gap-4 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300">
+
+            <a
+              href="tel:+923034340620"
+              class="group flex-1 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 flex items-center gap-4 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300"
+            >
               <div class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform duration-300">
                 <i class="fas fa-phone-alt text-white text-lg"></i>
               </div>
               <div>
-                <p class="text-gray-400 text-sm">Call me</p>
+                <p class="text-gray-400 text-sm">Phone</p>
                 <p class="text-white font-semibold">+92 303 4340620</p>
               </div>
             </a>

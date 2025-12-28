@@ -20,7 +20,7 @@
               <div class="relative">
                 <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-orange-500 to-red-500 opacity-50 blur"></div>
                 <img
-                  src="../assets/my_pic2.png"
+                  src="../assets/logo.svg"
                   alt="Ali Hassan"
                   class="relative w-12 h-12 rounded-full border-2 border-white/20 object-cover"
                 />

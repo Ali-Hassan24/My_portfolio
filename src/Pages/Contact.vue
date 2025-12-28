@@ -119,7 +119,7 @@
                   <input 
                     v-model="form.name" 
                     type="text" 
-                    placeholder="John Doe"
+                    placeholder="Ali"
                     class="w-full pl-12 pr-4 py-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 outline-none focus:border-orange-500/50 focus:bg-white/10 transition-all duration-300" 
                     required 
                   />
@@ -136,7 +136,7 @@
                   <input 
                     v-model="form.email" 
                     type="email" 
-                    placeholder="john@example.com"
+                    placeholder="ali@example.com"
                     class="w-full pl-12 pr-4 py-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 outline-none focus:border-orange-500/50 focus:bg-white/10 transition-all duration-300" 
                     required 
                   />

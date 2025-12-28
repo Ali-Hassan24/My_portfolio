@@ -14,9 +14,9 @@
           <div class="relative">
             <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-orange-500 to-red-500 opacity-50 blur group-hover:opacity-75 transition-opacity duration-300"></div>
             <img
-              src="../assets/my_pic2.png"
+              src="../assets/logo.svg"
               alt="Ali Hassan"
-              class="relative w-12 h-12 rounded-full border-2 border-white/20 object-cover"
+              class="relative w-12 h-12 rounded-full border-2 border-white/20"
             />
           </div>
           <div class="hidden sm:block">
@@ -120,7 +120,7 @@
             @click.prevent="scrollTo('contact'); showMenu = false"
             class="flex items-center justify-center gap-2 w-full px-6 py-3 text-sm font-semibold text-white bg-gradient-to-r from-orange-500 to-red-500 rounded-xl shadow-lg shadow-orange-500/25"
           >
-            <span>Let's Work Together</span>
+            <span>Let's Start Work Together</span>
             <i class="fas fa-arrow-right text-xs"></i>
           </a>
         </div>
